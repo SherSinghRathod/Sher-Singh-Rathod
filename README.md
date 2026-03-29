@@ -1,4 +1,4 @@
-# 🛡️ Practical Ethical Hacking — Lab & Progress Tracker
+# 🛡️ Sher Singh's Cybersecurity Portfolio
 
 ## 📌 Project Overview
 This repository serves as a comprehensive, structured record of my hands-on experience and practical lab work in ethical hacking and penetration testing. It documents my journey from setting up secure, isolated virtual environments to executing advanced, real-world cyber attacks. Through these exercises, I have developed a strong foundation in network analysis, vulnerability assessment, and offensive security techniques.
