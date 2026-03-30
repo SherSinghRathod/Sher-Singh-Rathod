@@ -5,7 +5,7 @@
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Active-88cc14?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/SherSinghRathod)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Active-88cc14?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/shersinghthrathod)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -75,17 +75,18 @@ Advanced MITM techniques including deep Wireshark traffic analysis with credenti
 
 <div align="center">
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/SherSinghRathod.png)](https://tryhackme.com/p/SherSinghRathod)
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/shersinghthrathod.png)](https://tryhackme.com/p/shersinghthrathod)
 
 </div>
 
-Actively completing rooms on [TryHackMe](https://tryhackme.com) to build hands-on offensive and defensive security skills. Progress is tracked below:
+Actively completing rooms on [TryHackMe](https://tryhackme.com/p/shersinghthrathod) to build hands-on offensive and defensive security skills. Progress is tracked below:
 
 ### Completed Rooms
 
 | # | Room | Category | Key Skills Practiced | Status |
 |:---:|:---|:---|:---|:---:|
 | 1 | [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro) | Introduction | Web app hacking basics, GoBuster directory brute-forcing, first legal hack | ✅ |
+| 2 | [Careers in Cyber](https://tryhackme.com/room/careersincyber) | Introduction | Security Analyst, Incident Responder, Pen Tester, Digital Forensics career roles | ✅ |
 
 ### Learning Paths in Progress
 
@@ -141,7 +142,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 ## 📚 Resources & Training
 
 - 🎓 **Course:** [Learn Ethical Hacking from Scratch — Zaid Sabih (Udemy)](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/)
-- 🏋️ **Practice:** [TryHackMe](https://tryhackme.com/p/SherSinghRathod) — Active profile with live room completions
+- 🏋️ **Practice:** [TryHackMe](https://tryhackme.com/p/shersinghthrathod) — Active profile with live room completions
 - 🏋️ **Advanced:** [HackTheBox](https://www.hackthebox.com/)
 - 📖 **Methodology:** [HackTricks](https://book.hacktricks.xyz/)
 
