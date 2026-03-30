@@ -26,17 +26,17 @@ Aspiring Cybersecurity Professional with hands-on experience in **offensive pene
 
 ## 🔥 Featured Labs
 
+### [🧪 Lab 01: Penetration Testing Environment Setup](labs/lab-01-environment-setup/README.md)
+Built a production-grade isolated penetration testing lab with Kali Linux (attacker) and Windows (target) VMs on a custom NAT Network. Configured hypervisor networking, verified inter-VM connectivity, and documented the complete architecture for repeatable testing.
+
+### [🧪 Lab 02: Wireless Pre-Connection Attacks](labs/lab-02-network-pre-connection/README.md)
+Audited wireless networks using monitor mode, performed packet sniffing with `airodump-ng`, executed deauthentication attacks to force client reconnections, captured WPA2 4-way handshakes, and cracked network passwords using offline dictionary attacks with `aircrack-ng`.
+
 ### [🧪 Lab 03: ARP Spoofing & Post-Connection Attacks](labs/lab-03-network-post-connection/README.md)
 Executed full bidirectional ARP cache poisoning against a Windows target on a NAT Network, intercepted HTTP traffic in real-time, captured cleartext credentials via Wireshark, and performed DNS spoofing to redirect victim traffic. Documented 2 real technical issues encountered (IP forwarding failure, NAT vs NAT Network misconfiguration) and their resolutions.
 
 ### [🧪 Lab 04: Man-in-the-Middle Deep Dive](labs/lab-04-mitm-deep-dive/README.md)
 Advanced MITM techniques including deep Wireshark traffic analysis with credential extraction filters, HTTPS downgrade testing with SSLstrip, real-time JavaScript injection into HTTP pages, and complete Bettercap MITM workflow. Mapped all techniques to MITRE ATT&CK framework (T1557, T1040, T1185, T1573).
-
-### [🧪 Lab 02: Wireless Pre-Connection Attacks](labs/lab-02-network-pre-connection/README.md)
-Audited wireless networks using monitor mode, performed packet sniffing with `airodump-ng`, executed deauthentication attacks to force client reconnections, captured WPA2 4-way handshakes, and cracked network passwords using offline dictionary attacks with `aircrack-ng`.
-
-### [🧪 Lab 01: Penetration Testing Environment Setup](labs/lab-01-environment-setup/README.md)
-Built a production-grade isolated penetration testing lab with Kali Linux (attacker) and Windows (target) VMs on a custom NAT Network. Verified inter-VM connectivity and documented the complete architecture for repeatable testing.
 
 ---
 
