@@ -88,6 +88,7 @@ Actively completing rooms on [TryHackMe](https://tryhackme.com/p/shersinghthrath
 | 1 | [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro) | Introduction | Web app hacking basics, GoBuster directory brute-forcing, first legal hack | ✅ |
 | 2 | [Careers in Cyber](https://tryhackme.com/room/careersincyber) | Introduction | Security Analyst, Incident Responder, Pen Tester, Digital Forensics career roles | ✅ |
 | 3 | [Junior Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo) | SOC Level 1 | SOC Analyst role, triage process, Security Operations Center workflow | ✅ |
+| 4 | [Human Attack Vectors](https://tryhackme.com/room/humansattackvectors) | SOC Level 1 | Social engineering, phishing, vishing, impersonation, attack techniques & defenses | ✅ |
 
 ### Learning Paths in Progress
 
