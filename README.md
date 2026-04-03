@@ -4,7 +4,7 @@
 
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
-[![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
+[![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Active-88cc14?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/shersinghthrathod)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
@@ -39,6 +39,9 @@ Executed full bidirectional ARP cache poisoning against a Windows target on a NA
 ### [🧪 Lab 04: Man-in-the-Middle Deep Dive](labs/lab-04-mitm-deep-dive/README.md)
 Advanced MITM techniques including deep Wireshark traffic analysis with credential extraction filters, HTTPS downgrade testing with SSLstrip, real-time JavaScript injection into HTTP pages, and complete Bettercap MITM workflow. Mapped all techniques to MITRE ATT&CK framework (T1557, T1040, T1185, T1573).
 
+### [🧪 Lab 05: DNS Spoofing with Bettercap Caplets](labs/lab-05-dns-spoofing-caplets/README.md)
+Wrote a custom Bettercap `.cap` caplet to fully automate DNS spoofing — a single command triggers ARP poisoning, DNS interception, and redirects the target to a custom-built web server. **Confirmed:** victim loaded attacker's website instead of the original domain without any visible indication. Demonstrates real-world phishing infrastructure at the network layer.
+
 ---
 
 ## 🎯 Skills Demonstrated
@@ -48,6 +51,7 @@ Advanced MITM techniques including deep Wireshark traffic analysis with credenti
 | **Wireless Security** | Monitor mode, packet sniffing, WPA/WPA2 cracking, deauth attacks | `airmon-ng`, `airodump-ng`, `aireplay-ng`, `aircrack-ng` |
 | **Network Exploitation** | ARP spoofing/poisoning, network discovery, traffic interception | `arpspoof`, `arp-scan`, `netdiscover`, `bettercap` |
 | **MITM Attacks** | ARP cache poisoning, DNS spoofing, HTTPS downgrade, JS injection | `bettercap`, `ettercap`, `sslstrip` |
+| **Attack Automation** | Bettercap caplets (`.cap` scripts), repeatable attack chains | `bettercap` caplets |
 | **Traffic Analysis** | Deep packet inspection, credential extraction, session analysis | `wireshark`, `urlsnarf`, `driftnet` |
 | **Vulnerability Exploitation** | Service scanning, exploit execution, payload delivery | `nmap`, `msfconsole`, `msfvenom` |
 | **Post-Exploitation** | Privilege escalation, persistence, hash dumping, keylogging | `meterpreter`, Metasploit Framework |
@@ -63,9 +67,10 @@ Advanced MITM techniques including deep Wireshark traffic analysis with credenti
 | 2 | Network Hacking (Pre-Connection) | ✅ Completed | [Lab 02](labs/lab-02-network-pre-connection/README.md) |
 | 3 | Network Hacking (Post-Connection) | ✅ Completed | [Lab 03](labs/lab-03-network-post-connection/README.md) |
 | 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
-| 5 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
-| 6 | Post Exploitation | 🔒 Coming Soon | — |
-| 7 | Web Application Hacking | 🔒 Coming Soon | — |
+| 5 | DNS Spoofing with Bettercap Caplets | ✅ Completed | [Lab 05](labs/lab-05-dns-spoofing-caplets/README.md) |
+| 6 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
+| 7 | Post Exploitation | 🔒 Coming Soon | — |
+| 8 | Web Application Hacking | 🔒 Coming Soon | — |
 
 > **Legend:** ✅ Completed &nbsp;|&nbsp; 🔒 Coming Soon
 
@@ -154,12 +159,13 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 ```
 Ethical-Hacking-Portfolio/
-├── README.md                                    ← You are here
+├── README.md                                       ← You are here
 ├── labs/
-│   ├── lab-01-environment-setup/README.md       ← Lab environment setup
-│   ├── lab-02-network-pre-connection/README.md  ← Wireless pre-connection attacks
-│   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
-│   └── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
+│   ├── lab-01-environment-setup/README.md          ← Lab environment setup
+│   ├── lab-02-network-pre-connection/README.md     ← Wireless pre-connection attacks
+│   ├── lab-03-network-post-connection/README.md    ← ARP spoofing & MITM
+│   ├── lab-04-mitm-deep-dive/README.md             ← Advanced MITM techniques
+│   └── lab-05-dns-spoofing-caplets/README.md       ← DNS spoofing with Bettercap caplets
 └── (more labs coming as sections are completed)
 ```
 
