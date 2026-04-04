@@ -122,6 +122,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 | Room | Topic | Date | Certificate |
 |:---|:---|:---:|:---:|
 | [Systems as Attack Vectors](https://tryhackme.com/room/systemsattackvectors) | Exploiting vulnerable & misconfigured systems | Apr 2026 | ✅ [View](https://tryhackme.com/room/systemsattackvectors/congratulations?step=records) |
+| [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage) | SOC alerts & systematic triage methodology | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alerttriage/congratulations?step=records) |
 
 ---
 
