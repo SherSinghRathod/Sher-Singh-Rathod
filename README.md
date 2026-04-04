@@ -5,6 +5,7 @@
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Systems_as_Attack_Vectors_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/systemsattackvectors)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -115,6 +116,12 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 - 🏋️ **Practice:** [TryHackMe — Jr Penetration Tester Path](https://tryhackme.com/path/outline/jrpenetrationtester)
 - 🏋️ **Advanced:** [HackTheBox](https://www.hackthebox.com/)
 - 📖 **Methodology:** [HackTricks](https://book.hacktricks.xyz/)
+
+### 🏆 TryHackMe Rooms Completed
+
+| Room | Topic | Date | Certificate |
+|:---|:---|:---:|:---:|
+| [Systems as Attack Vectors](https://tryhackme.com/room/systemsattackvectors) | Exploiting vulnerable & misconfigured systems | Apr 2026 | ✅ [View](https://tryhackme.com/room/systemsattackvectors/congratulations?step=records) |
 
 ---
 
