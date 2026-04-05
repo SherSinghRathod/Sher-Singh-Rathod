@@ -4,7 +4,7 @@
 
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
-[![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
+[![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_L1_Alert_Reporting_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socl1alertreporting)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
@@ -27,6 +27,9 @@ Aspiring Cybersecurity Professional with hands-on experience in **offensive pene
 
 ## 🔥 Featured Labs
 
+### [🔍 Lab 05: SIEM Home Lab — Splunk Enterprise](labs/lab-05-siem-splunk-home-lab/README.md)
+Built a fully functional Security Information and Event Management (SIEM) lab from scratch. Deployed Ubuntu Server 24.04.4 LTS, installed Splunk Enterprise 9.3.2, configured network connectivity across VMware NAT, and connected the Windows target VM to forward logs to Splunk via Universal Forwarder. Diagnosed and resolved a VMware subnet mismatch issue. Log correlation using SPL to detect brute force, PowerShell execution, and process creation events.
+
 ### [🧪 Lab 03: ARP Spoofing & Post-Connection Attacks](labs/lab-03-network-post-connection/README.md)
 Executed full bidirectional ARP cache poisoning against a Windows target on a NAT Network, intercepted HTTP traffic in real-time, captured cleartext credentials via Wireshark, and performed DNS spoofing to redirect victim traffic. Documented 2 real technical issues encountered (IP forwarding failure, NAT vs NAT Network misconfiguration) and their resolutions.
 
@@ -45,6 +48,7 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 
 | Skill Area | Techniques | Tools |
 |---|---|---|
+| **SIEM & Blue Team** | Log ingestion, SPL queries, alert detection, event correlation | `Splunk Enterprise`, `Universal Forwarder` |
 | **Wireless Security** | Monitor mode, packet sniffing, WPA/WPA2 cracking, deauth attacks | `airmon-ng`, `airodump-ng`, `aireplay-ng`, `aircrack-ng` |
 | **Network Exploitation** | ARP spoofing/poisoning, network discovery, traffic interception | `arpspoof`, `arp-scan`, `netdiscover`, `bettercap` |
 | **MITM Attacks** | ARP cache poisoning, DNS spoofing, HTTPS downgrade, JS injection | `bettercap`, `ettercap`, `sslstrip` |
@@ -52,6 +56,7 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 | **Vulnerability Exploitation** | Service scanning, exploit execution, payload delivery | `nmap`, `msfconsole`, `msfvenom` |
 | **Post-Exploitation** | Privilege escalation, persistence, hash dumping, keylogging | `meterpreter`, Metasploit Framework |
 | **Web App Hacking** | SQLi, XSS, LFI, brute forcing | `sqlmap`, `hydra`, `burpsuite` |
+| **Linux Server Admin** | Ubuntu Server setup, service management, network troubleshooting | `systemctl`, `ufw`, `ss`, `apt` |
 
 ---
 
@@ -63,9 +68,10 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 | 2 | Network Hacking (Pre-Connection) | ✅ Completed | [Lab 02](labs/lab-02-network-pre-connection/README.md) |
 | 3 | Network Hacking (Post-Connection) | ✅ Completed | [Lab 03](labs/lab-03-network-post-connection/README.md) |
 | 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
-| 5 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
-| 6 | Post Exploitation | 🔒 Coming Soon | — |
-| 7 | Web Application Hacking | 🔒 Coming Soon | — |
+| 5 | SIEM Home Lab — Splunk Enterprise | ✅ Completed | [Lab 05](labs/lab-05-siem-splunk-home-lab/README.md) |
+| 6 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
+| 7 | Post Exploitation | 🔒 Coming Soon | — |
+| 8 | Web Application Hacking | 🔒 Coming Soon | — |
 
 > **Legend:** ✅ Completed &nbsp;|&nbsp; 🔒 Coming Soon
 
@@ -75,6 +81,8 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 
 | Tool | Primary Purpose | Category |
 |:---|:---|:---|
+| **`Splunk Enterprise`** | SIEM — log ingestion, correlation & dashboards | Blue Team / SOC |
+| **`Splunk Universal Forwarder`** | Endpoint log collection & forwarding | Blue Team / SOC |
 | **`nmap`** | Port/service scanning & reconnaissance | Reconnaissance |
 | **`msfconsole`** | Enterprise exploitation framework | Exploitation |
 | **`msfvenom`** | Custom payload generation | Exploitation |
@@ -136,7 +144,8 @@ Ethical-Hacking-Portfolio/
 │   ├── lab-01-environment-setup/README.md       ← Lab environment setup
 │   ├── lab-02-network-pre-connection/README.md  ← Wireless pre-connection attacks
 │   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
-│   └── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
+│   ├── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
+│   └── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
 └── (more labs coming as sections are completed)
 ```
 
