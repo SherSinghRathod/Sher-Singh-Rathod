@@ -5,7 +5,7 @@
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-4-brightgreen)]()
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Systems_as_Attack_Vectors_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/systemsattackvectors)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_L1_Alert_Reporting_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socl1alertreporting)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -123,6 +123,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 |:---|:---|:---:|:---:|
 | [Systems as Attack Vectors](https://tryhackme.com/room/systemsattackvectors) | Exploiting vulnerable & misconfigured systems | Apr 2026 | ✅ [View](https://tryhackme.com/room/systemsattackvectors/congratulations?step=records) |
 | [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage) | SOC alerts & systematic triage methodology | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alerttriage/congratulations?step=records) |
+| [SOC L1 Alert Reporting](https://tryhackme.com/room/socl1alertreporting) | Professional alert documentation & SOC reporting workflow | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alertreporting/congratulations?step=records) |
 
 ---
 
