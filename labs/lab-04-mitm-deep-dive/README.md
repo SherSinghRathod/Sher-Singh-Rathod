@@ -352,16 +352,7 @@ sudo bettercap -iface eth0
 > dns.spoof on
 
 # ============================================
-# PHASE 5: CAPLETS FOR AUTOMATION
-# ============================================
-
-# Bettercap allows saving commands into a `.cap` file (caplet) to automate attacks.
-# Example: Create spoof.cap with the above commands, then run:
-# sudo bettercap -iface eth0 -caplet spoof.cap
-# Successfully tested: Redirected a target to my custom website instead of original!
-
-# ============================================
-# PHASE 6: CLEANUP (when done)
+# PHASE 5: CLEANUP (when done)
 # ============================================
 
 > arp.spoof off
@@ -382,7 +373,6 @@ sudo bettercap -iface eth0
 | SSLstrip Concept | HTTPS → HTTP downgrade | ✅ | Demonstrated on non-HSTS site |
 | JavaScript Injection | `alert()` injection via Bettercap proxy | ✅ | Alert box appeared on victim's browser |
 | Bettercap Full MITM | All-in-one ARP spoof + sniff + DNS spoof | ✅ | Complete session workflow documented |
-| Bettercap Caplets | Automated DNS Spoofing with `.cap` file | ✅ | Automatically redirected target to custom website instead of the original |
 
 ---
 
