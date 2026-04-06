@@ -6,7 +6,7 @@
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
 [![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_L1_Alert_Reporting_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socl1alertreporting)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_Workbooks_%26_Lookups_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socworkbookslookups)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -135,6 +135,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 | [Systems as Attack Vectors](https://tryhackme.com/room/systemsattackvectors) | Exploiting vulnerable & misconfigured systems | Apr 2026 | ✅ [View](https://tryhackme.com/room/systemsattackvectors/congratulations?step=records) |
 | [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage) | SOC alerts & systematic triage methodology | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alerttriage/congratulations?step=records) |
 | [SOC L1 Alert Reporting](https://tryhackme.com/room/socl1alertreporting) | Professional alert documentation & SOC reporting workflow | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alertreporting/congratulations?step=records) |
+| [SOC Workbooks & Lookups](https://tryhackme.com/room/socworkbookslookups) | SOC playbooks, escalation workflows & lookup tables | Apr 2026 | ✅ [View](https://tryhackme.com/room/socworkbookslookups/congratulations?step=records) |
 
 ---
 
