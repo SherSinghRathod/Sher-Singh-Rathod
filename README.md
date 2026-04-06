@@ -111,6 +111,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 | Certification | Status |
 |:---|:---:|
+| **CCNA 200-301** — Full Course by Pradeep Kumar (YouTube) + Cisco Packet Tracer Labs | ✅ Completed |
 | **eJPT** (eLearnSecurity Junior Penetration Tester) | 🎯 Target |
 | **CEH** (Certified Ethical Hacker) | 🎯 Target |
 | **OSCP** (Offensive Security Certified Professional) | 🎯 Target |
@@ -120,6 +121,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 ## 📚 Resources & Training
 
+- 🌐 **Networking:** [CCNA 200-301 Full Course — Pradeep Kumar (YouTube, Hindi)](https://www.youtube.com/watch?v=EPeFhfENuXA&list=PL2l13o6BVteMQGXFw7WEovEWoROLGdgwE) + Hands-on labs in Cisco Packet Tracer
 - 🎓 **Course:** [Learn Ethical Hacking from Scratch — Zaid Sabih (Udemy)](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/)
 - 🏋️ **Practice:** [TryHackMe — Jr Penetration Tester Path](https://tryhackme.com/path/outline/jrpenetrationtester)
 - 🏋️ **Advanced:** [HackTheBox](https://www.hackthebox.com/)
