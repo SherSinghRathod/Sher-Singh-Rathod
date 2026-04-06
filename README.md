@@ -5,7 +5,8 @@
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Active-88cc14?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/shersinghthrathod)
+[![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_L1_Alert_Reporting_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socl1alertreporting)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -15,7 +16,7 @@
 
 ## 👤 About Me
 
-Aspiring Cybersecurity Professional with hands-on experience in **offensive penetration testing** and **network security**. Currently building practical skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
+Aspiring Cybersecurity Professional with hands-on experience in **offensive penetration testing**, **network security**, and **SIEM/SOC operations**. Completed the **CCNA 200-301** networking course with hands-on Cisco Packet Tracer labs, built a full Splunk SIEM home lab, and developed practical offensive skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
 
 **Career Objectives:**
 - Secure a role as a **Penetration Tester / SOC Analyst / Cybersecurity Professional**
@@ -27,11 +28,8 @@ Aspiring Cybersecurity Professional with hands-on experience in **offensive pene
 
 ## 🔥 Featured Labs
 
-### [🧪 Lab 01: Penetration Testing Environment Setup](labs/lab-01-environment-setup/README.md)
-Built a production-grade isolated penetration testing lab with Kali Linux (attacker) and Windows (target) VMs on a custom NAT Network. Configured hypervisor networking, verified inter-VM connectivity, and documented the complete architecture for repeatable testing.
-
-### [🧪 Lab 02: Wireless Pre-Connection Attacks](labs/lab-02-network-pre-connection/README.md)
-Audited wireless networks using monitor mode, performed packet sniffing with `airodump-ng`, executed deauthentication attacks to force client reconnections, captured WPA2 4-way handshakes, and cracked network passwords using offline dictionary attacks with `aircrack-ng`.
+### [🔍 Lab 05: SIEM Home Lab — Splunk Enterprise](labs/lab-05-siem-splunk-home-lab/README.md)
+Built a fully functional Security Information and Event Management (SIEM) lab from scratch. Deployed Ubuntu Server 24.04.4 LTS, installed Splunk Enterprise 9.3.2, configured network connectivity across VMware NAT, and connected the Windows target VM to forward logs to Splunk via Universal Forwarder. Diagnosed and resolved a VMware subnet mismatch issue. Log correlation using SPL to detect brute force, PowerShell execution, and process creation events.
 
 ### [🧪 Lab 03: ARP Spoofing & Post-Connection Attacks](labs/lab-03-network-post-connection/README.md)
 Executed full bidirectional ARP cache poisoning against a Windows target on a NAT Network, intercepted HTTP traffic in real-time, captured cleartext credentials via Wireshark, and performed DNS spoofing to redirect victim traffic. Documented 2 real technical issues encountered (IP forwarding failure, NAT vs NAT Network misconfiguration) and their resolutions.
@@ -39,8 +37,11 @@ Executed full bidirectional ARP cache poisoning against a Windows target on a NA
 ### [🧪 Lab 04: Man-in-the-Middle Deep Dive](labs/lab-04-mitm-deep-dive/README.md)
 Advanced MITM techniques including deep Wireshark traffic analysis with credential extraction filters, HTTPS downgrade testing with SSLstrip, real-time JavaScript injection into HTTP pages, and complete Bettercap MITM workflow. Mapped all techniques to MITRE ATT&CK framework (T1557, T1040, T1185, T1573).
 
-### [🧪 Lab 05: DNS Spoofing with Bettercap Caplets](labs/lab-05-dns-spoofing-caplets/README.md)
-Wrote a custom Bettercap `.cap` caplet to fully automate DNS spoofing — a single command triggers ARP poisoning, DNS interception, and redirects the target to a custom-built web server. **Confirmed:** victim loaded attacker's website instead of the original domain without any visible indication. Demonstrates real-world phishing infrastructure at the network layer.
+### [🧪 Lab 02: Wireless Pre-Connection Attacks](labs/lab-02-network-pre-connection/README.md)
+Audited wireless networks using monitor mode, performed packet sniffing with `airodump-ng`, executed deauthentication attacks to force client reconnections, captured WPA2 4-way handshakes, and cracked network passwords using offline dictionary attacks with `aircrack-ng`.
+
+### [🧪 Lab 01: Penetration Testing Environment Setup](labs/lab-01-environment-setup/README.md)
+Built a production-grade isolated penetration testing lab with Kali Linux (attacker) and Windows (target) VMs on a custom NAT Network. Verified inter-VM connectivity and documented the complete architecture for repeatable testing.
 
 ---
 
@@ -48,14 +49,15 @@ Wrote a custom Bettercap `.cap` caplet to fully automate DNS spoofing — a sing
 
 | Skill Area | Techniques | Tools |
 |---|---|---|
+| **SIEM & Blue Team** | Log ingestion, SPL queries, alert detection, event correlation | `Splunk Enterprise`, `Universal Forwarder` |
 | **Wireless Security** | Monitor mode, packet sniffing, WPA/WPA2 cracking, deauth attacks | `airmon-ng`, `airodump-ng`, `aireplay-ng`, `aircrack-ng` |
 | **Network Exploitation** | ARP spoofing/poisoning, network discovery, traffic interception | `arpspoof`, `arp-scan`, `netdiscover`, `bettercap` |
 | **MITM Attacks** | ARP cache poisoning, DNS spoofing, HTTPS downgrade, JS injection | `bettercap`, `ettercap`, `sslstrip` |
-| **Attack Automation** | Bettercap caplets (`.cap` scripts), repeatable attack chains | `bettercap` caplets |
 | **Traffic Analysis** | Deep packet inspection, credential extraction, session analysis | `wireshark`, `urlsnarf`, `driftnet` |
 | **Vulnerability Exploitation** | Service scanning, exploit execution, payload delivery | `nmap`, `msfconsole`, `msfvenom` |
 | **Post-Exploitation** | Privilege escalation, persistence, hash dumping, keylogging | `meterpreter`, Metasploit Framework |
 | **Web App Hacking** | SQLi, XSS, LFI, brute forcing | `sqlmap`, `hydra`, `burpsuite` |
+| **Linux Server Admin** | Ubuntu Server setup, service management, network troubleshooting | `systemctl`, `ufw`, `ss`, `apt` |
 
 ---
 
@@ -67,7 +69,7 @@ Wrote a custom Bettercap `.cap` caplet to fully automate DNS spoofing — a sing
 | 2 | Network Hacking (Pre-Connection) | ✅ Completed | [Lab 02](labs/lab-02-network-pre-connection/README.md) |
 | 3 | Network Hacking (Post-Connection) | ✅ Completed | [Lab 03](labs/lab-03-network-post-connection/README.md) |
 | 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
-| 5 | DNS Spoofing with Bettercap Caplets | ✅ Completed | [Lab 05](labs/lab-05-dns-spoofing-caplets/README.md) |
+| 5 | SIEM Home Lab — Splunk Enterprise | ✅ Completed | [Lab 05](labs/lab-05-siem-splunk-home-lab/README.md) |
 | 6 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
 | 7 | Post Exploitation | 🔒 Coming Soon | — |
 | 8 | Web Application Hacking | 🔒 Coming Soon | — |
@@ -76,41 +78,12 @@ Wrote a custom Bettercap `.cap` caplet to fully automate DNS spoofing — a sing
 
 ---
 
-## 🏋️ TryHackMe Progress
-
-<div align="center">
-
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/shersinghthrathod.png)](https://tryhackme.com/p/shersinghthrathod)
-
-</div>
-
-Actively completing rooms on [TryHackMe](https://tryhackme.com/p/shersinghthrathod) to build hands-on offensive and defensive security skills. Progress is tracked below:
-
-### Completed Rooms
-
-| # | Room | Category | Key Skills Practiced | Status |
-|:---:|:---|:---|:---|:---:|
-| 1 | [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro) | Introduction | Web app hacking basics, GoBuster directory brute-forcing, first legal hack | ✅ |
-| 2 | [Careers in Cyber](https://tryhackme.com/room/careersincyber) | Introduction | Security Analyst, Incident Responder, Pen Tester, Digital Forensics career roles | ✅ |
-| 3 | [Junior Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo) | SOC Level 1 | SOC Analyst role, triage process, Security Operations Center workflow | ✅ |
-| 4 | [Human Attack Vectors](https://tryhackme.com/room/humansattackvectors) | SOC Level 1 | Social engineering, phishing, vishing, impersonation, attack techniques & defenses | ✅ |
-
-### Learning Paths in Progress
-
-| Path | Focus Area | Progress |
-|:---|:---|:---:|
-| [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester) | Offensive Security — Pen Testing methodology, tools & techniques | 🟢 In Progress |
-| [Pre Security](https://tryhackme.com/path/outline/presecurity) | Fundamentals — Networking, Linux, Web basics | 🎯 Planned |
-| [SOC Level 1](https://tryhackme.com/path/outline/soclevel1) | Blue Team — SIEM, log analysis, incident response | 🎯 Planned |
-
-> 💡 *This section is updated as I complete new rooms. Each room involves hands-on exercises in a live lab environment provided by TryHackMe.*
-
----
-
 ## 🧰 The Penetration Tester's Toolkit
 
 | Tool | Primary Purpose | Category |
 |:---|:---|:---|
+| **`Splunk Enterprise`** | SIEM — log ingestion, correlation & dashboards | Blue Team / SOC |
+| **`Splunk Universal Forwarder`** | Endpoint log collection & forwarding | Blue Team / SOC |
 | **`nmap`** | Port/service scanning & reconnaissance | Reconnaissance |
 | **`msfconsole`** | Enterprise exploitation framework | Exploitation |
 | **`msfvenom`** | Custom payload generation | Exploitation |
@@ -139,6 +112,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 | Certification | Status |
 |:---|:---:|
+| **CCNA 200-301** — Full Course by Pradeep Kumar (YouTube) + Cisco Packet Tracer Labs | ✅ Completed |
 | **eJPT** (eLearnSecurity Junior Penetration Tester) | 🎯 Target |
 | **CEH** (Certified Ethical Hacker) | 🎯 Target |
 | **OSCP** (Offensive Security Certified Professional) | 🎯 Target |
@@ -148,10 +122,19 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 ## 📚 Resources & Training
 
+- 🌐 **Networking:** [CCNA 200-301 Full Course — Pradeep Kumar (YouTube, Hindi)](https://www.youtube.com/watch?v=EPeFhfENuXA&list=PL2l13o6BVteMQGXFw7WEovEWoROLGdgwE) + Hands-on labs in Cisco Packet Tracer
 - 🎓 **Course:** [Learn Ethical Hacking from Scratch — Zaid Sabih (Udemy)](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/)
-- 🏋️ **Practice:** [TryHackMe](https://tryhackme.com/p/shersinghthrathod) — Active profile with live room completions
+- 🏋️ **Practice:** [TryHackMe — Jr Penetration Tester Path](https://tryhackme.com/path/outline/jrpenetrationtester)
 - 🏋️ **Advanced:** [HackTheBox](https://www.hackthebox.com/)
 - 📖 **Methodology:** [HackTricks](https://book.hacktricks.xyz/)
+
+### 🏆 TryHackMe Rooms Completed
+
+| Room | Topic | Date | Certificate |
+|:---|:---|:---:|:---:|
+| [Systems as Attack Vectors](https://tryhackme.com/room/systemsattackvectors) | Exploiting vulnerable & misconfigured systems | Apr 2026 | ✅ [View](https://tryhackme.com/room/systemsattackvectors/congratulations?step=records) |
+| [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage) | SOC alerts & systematic triage methodology | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alerttriage/congratulations?step=records) |
+| [SOC L1 Alert Reporting](https://tryhackme.com/room/socl1alertreporting) | Professional alert documentation & SOC reporting workflow | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alertreporting/congratulations?step=records) |
 
 ---
 
@@ -159,13 +142,15 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 
 ```
 Ethical-Hacking-Portfolio/
-├── README.md                                       ← You are here
+├── README.md                                    ← You are here
 ├── labs/
-│   ├── lab-01-environment-setup/README.md          ← Lab environment setup
-│   ├── lab-02-network-pre-connection/README.md     ← Wireless pre-connection attacks
-│   ├── lab-03-network-post-connection/README.md    ← ARP spoofing & MITM
-│   ├── lab-04-mitm-deep-dive/README.md             ← Advanced MITM techniques
-│   └── lab-05-dns-spoofing-caplets/README.md       ← DNS spoofing with Bettercap caplets
+│   ├── lab-01-environment-setup/README.md       ← Lab environment setup
+│   ├── lab-02-network-pre-connection/README.md  ← Wireless pre-connection attacks
+│   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
+│   ├── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
+│   └── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
+├── ccna-networking-labs/
+│   └── README.md                               ← CCNA 200-301 Packet Tracer labs
 └── (more labs coming as sections are completed)
 ```
 
