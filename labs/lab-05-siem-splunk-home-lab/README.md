@@ -125,6 +125,19 @@ sudo ss -tlnp | grep 8000
 
 ---
 
+## ✅ Lab Status: FULLY COMPLETE
+
+| Phase | Task | Status |
+|:---|:---|:---:|
+| 1 | Ubuntu Server 24.04.4 LTS installed in VMware | ✅ |
+| 2 | Splunk Enterprise 9.3.2 installed & running | ✅ |
+| 3 | Splunk Web UI accessible at `192.168.181.134:8000` | ✅ |
+| 4 | Splunk Universal Forwarder installed on Windows 10 VM | ✅ |
+| 5 | Windows Event Logs flowing from Windows → Splunk | ✅ |
+| 6 | Nmap scan from Kali detected in Splunk (`EventCode=4625`) | ✅ |
+
+---
+
 ## 🌐 Phase 3: Splunk Web UI Access
 
 Accessed the Splunk dashboard from **Windows 10 Target VM** browser:
