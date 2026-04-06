@@ -5,6 +5,7 @@
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
+[![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_L1_Alert_Reporting_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socl1alertreporting)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
@@ -15,7 +16,7 @@
 
 ## 👤 About Me
 
-Aspiring Cybersecurity Professional with hands-on experience in **offensive penetration testing** and **network security**. Currently building practical skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
+Aspiring Cybersecurity Professional with hands-on experience in **offensive penetration testing**, **network security**, and **SIEM/SOC operations**. Completed the **CCNA 200-301** networking course with hands-on Cisco Packet Tracer labs, built a full Splunk SIEM home lab, and developed practical offensive skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
 
 **Career Objectives:**
 - Secure a role as a **Penetration Tester / SOC Analyst / Cybersecurity Professional**
@@ -148,6 +149,8 @@ Ethical-Hacking-Portfolio/
 │   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
 │   ├── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
 │   └── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
+├── ccna-networking-labs/
+│   └── README.md                               ← CCNA 200-301 Packet Tracer labs
 └── (more labs coming as sections are completed)
 ```
 
