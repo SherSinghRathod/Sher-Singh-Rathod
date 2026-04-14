@@ -6,7 +6,7 @@
 
 [![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
 [![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC_Metrics_%26_Objectives_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/socmetricsobjectives)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Introduction_to_EDR_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/introductiontoedrs)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
 [![Focus](https://img.shields.io/badge/Focus-Offensive_Security-red)]()
 
@@ -137,6 +137,7 @@ Real-world hacking involves as much debugging as executing attacks. These are ge
 | [SOC L1 Alert Reporting](https://tryhackme.com/room/socl1alertreporting) | Professional alert documentation & SOC reporting workflow | Apr 2026 | ✅ [View](https://tryhackme.com/room/socl1alertreporting/congratulations?step=records) |
 | [SOC Workbooks & Lookups](https://tryhackme.com/room/socworkbookslookups) | SOC playbooks, escalation workflows & lookup tables | Apr 2026 | ✅ [View](https://tryhackme.com/room/socworkbookslookups/congratulations?step=records) |
 | [SOC Metrics & Objectives](https://tryhackme.com/room/socmetricsobjectives) | Key SOC KPIs, effectiveness metrics & continuous improvement | Apr 2026 | ✅ [View](https://tryhackme.com/room/socmetricsobjectives/congratulations?step=social-share) |
+| [Introduction to EDR](https://tryhackme.com/room/introductiontoedrs) | EDR fundamentals, features, and how endpoint detection & response works | Apr 2026 | ✅ [View](https://tryhackme.com/room/introductiontoedrs/congratulations?step=next-room) |
 
 ---
 
