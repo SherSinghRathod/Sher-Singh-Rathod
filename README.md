@@ -4,7 +4,7 @@
 
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
-[![Labs](https://img.shields.io/badge/Labs_Completed-5-brightgreen)]()
+[![Labs](https://img.shields.io/badge/Labs_Completed-6-brightgreen)]()
 [![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Introduction_to_EDR_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/introductiontoedrs)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
@@ -27,6 +27,9 @@ Aspiring Cybersecurity Professional with hands-on experience in **offensive pene
 ---
 
 ## 🔥 Featured Labs
+
+### [🔬 Lab 06: Wireshark — Deep Packet Inspection & Network Traffic Analysis](labs/lab-06-wireshark-traffic-analysis/README.md)
+Used Wireshark to capture and analyse live network traffic from a MITM position. Applied advanced display filters to extract HTTP credentials from POST requests, profile victim DNS queries, capture session cookies, and analyse legacy cleartext protocols (FTP/Telnet). Documented the full filter toolkit used by professional penetration testers for rapid traffic triage.
 
 ### [🔍 Lab 05: SIEM Home Lab — Splunk Enterprise](labs/lab-05-siem-splunk-home-lab/README.md)
 Built a fully functional Security Information and Event Management (SIEM) lab from scratch. Deployed Ubuntu Server 24.04.4 LTS, installed Splunk Enterprise 9.3.2, configured network connectivity across VMware NAT, and connected the Windows target VM to forward logs to Splunk via Universal Forwarder. Diagnosed and resolved a VMware subnet mismatch issue. Log correlation using SPL to detect brute force, PowerShell execution, and process creation events.
@@ -70,9 +73,10 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 | 3 | Network Hacking (Post-Connection) | ✅ Completed | [Lab 03](labs/lab-03-network-post-connection/README.md) |
 | 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
 | 5 | SIEM Home Lab — Splunk Enterprise | ✅ Completed | [Lab 05](labs/lab-05-siem-splunk-home-lab/README.md) |
-| 6 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
-| 7 | Post Exploitation | 🔒 Coming Soon | — |
-| 8 | Web Application Hacking | 🔒 Coming Soon | — |
+| 6 | Wireshark — Deep Packet Inspection & Traffic Analysis | ✅ Completed | [Lab 06](labs/lab-06-wireshark-traffic-analysis/README.md) |
+| 7 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
+| 8 | Post Exploitation | 🔒 Coming Soon | — |
+| 9 | Web Application Hacking | 🔒 Coming Soon | — |
 
 > **Legend:** ✅ Completed &nbsp;|&nbsp; 🔒 Coming Soon
 
@@ -151,7 +155,8 @@ Ethical-Hacking-Portfolio/
 │   ├── lab-02-network-pre-connection/README.md  ← Wireless pre-connection attacks
 │   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
 │   ├── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
-│   └── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
+│   ├── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
+│   └── lab-06-wireshark-traffic-analysis/README.md ← Wireshark deep packet analysis
 ├── ccna-networking-labs/
 │   └── README.md                               ← CCNA 200-301 Packet Tracer labs
 └── (more labs coming as sections are completed)
