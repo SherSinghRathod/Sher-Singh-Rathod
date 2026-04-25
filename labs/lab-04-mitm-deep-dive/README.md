@@ -363,6 +363,103 @@ sudo bettercap -iface eth0
 
 ---
 
+### Part E: Detecting MITM Attacks (Blue Team Perspective)
+
+Understanding how to **detect** ARP poisoning is just as important as executing it. This section covers how a defender or SOC analyst identifies an active MITM attack on the network.
+
+#### How ARP Poisoning Leaves Traces
+
+An ARP spoof attack creates an **inconsistency**: two different IP addresses share the same MAC address in the ARP cache — because the attacker's machine is impersonating both the gateway and the victim simultaneously.
+
+```
+NORMAL ARP TABLE (on victim):
+  IP 10.0.2.1  (Gateway)   →  MAC: 52:54:00:12:35:00   ✅ Correct
+  IP 10.0.2.5  (Attacker)  →  MAC: 08:00:27:ff:ee:dd   ✅ Correct
+
+POISONED ARP TABLE (during attack):
+  IP 10.0.2.1  (Gateway)   →  MAC: 08:00:27:ff:ee:dd   ❌ WRONG! (attacker's MAC)
+  IP 10.0.2.5  (Attacker)  →  MAC: 08:00:27:ff:ee:dd   ← Same MAC = ARP Spoofing!
+```
+
+#### Method 1: Inspect the ARP Cache Manually
+
+Run this on any Windows or Linux machine on the network:
+
+```bash
+# Linux / Kali
+arp -a
+
+# Windows (run in CMD)
+arp -a
+
+# What to look for: Two different IP addresses sharing the same MAC address
+# Example of suspicious output:
+# Interface: 10.0.2.15
+#   10.0.2.1     08-00-27-ff-ee-dd   dynamic   ← Gateway with attacker's MAC!
+#   10.0.2.5     08-00-27-ff-ee-dd   dynamic   ← Same MAC! ARP spoof detected
+```
+
+> 🚩 **Red Flag:** If your **gateway's MAC address** matches **any other device** on the network, you are likely under an ARP spoofing attack.
+
+#### Method 2: Detect via Wireshark — ARP Analysis
+
+Launch Wireshark and apply the ARP filter:
+
+```
+# Filter to show all ARP packets
+arp
+
+# More targeted — look for gratuitous ARP (unsolicited announcements)
+arp.opcode == 2 && arp.src.proto_ipv4 != arp.dst.proto_ipv4
+```
+
+**What to look for in the packet list:**
+
+```
+Suspicious ARP Pattern:
+  Packet 1:  10.0.2.5  → Broadcast: "10.0.2.1 is at 08:00:27:ff:ee:dd"  ← Tells victim to update cache
+  Packet 2:  10.0.2.5  → Broadcast: "10.0.2.15 is at 08:00:27:ff:ee:dd" ← Tells gateway to update cache
+
+  Both announcements use the SAME MAC (attacker's) for DIFFERENT IPs = ARP Poisoning
+```
+
+**Wireshark Detection Indicators:**
+| Indicator | What It Means |
+|---|---|
+| High volume of ARP replies with no prior request | Gratuitous ARP — attacker constantly refreshing poison |
+| Same MAC appearing for multiple IPs | Classic ARP spoofing signature |
+| ARP replies from non-gateway IPs claiming to be the gateway | Impersonation attempt |
+
+#### Method 3: Use XArp (GUI-based ARP Monitor)
+
+**XArp** is a dedicated ARP spoofing detection tool with a graphical interface.
+
+```
+Download: https://www.xarp.net
+
+How it works:
+  1. Learns the legitimate MAC-to-IP mappings on your network
+  2. Continuously monitors ARP traffic in the background
+  3. Alerts you immediately if any MAC-IP mapping changes unexpectedly
+  4. Provides a simple GREEN / RED status indicator
+
+Detection levels:
+  • Passive: Watches ARP cache for inconsistencies
+  • Active:  Sends ARP probes to verify device identity
+```
+
+#### Detection Results Table
+
+| Method | Technique | What It Detects | Skill Level |
+|---|---|---|---|
+| `arp -a` | Inspect ARP cache for duplicate MACs | Active attack in progress | Beginner |
+| Wireshark ARP filter | Identify gratuitous / unsolicited ARP replies | Ongoing poisoning traffic | Intermediate |
+| XArp monitoring | Real-time MAC-IP mapping verification | Attack start + ongoing | Beginner (GUI) |
+
+> 💡 **Key Insight for Defenders:** ARP spoofing is detectable precisely because it relies on **constantly re-poisoning** the cache (ARP entries expire). An attacker can't just poison once — they must keep sending fake ARP replies, which creates a detectable stream of suspicious traffic.
+
+---
+
 ## 📊 Lab Results
 
 | Exercise | Technique | Result | Evidence |
@@ -373,6 +470,9 @@ sudo bettercap -iface eth0
 | SSLstrip Concept | HTTPS → HTTP downgrade | ✅ | Demonstrated on non-HSTS site |
 | JavaScript Injection | `alert()` injection via Bettercap proxy | ✅ | Alert box appeared on victim's browser |
 | Bettercap Full MITM | All-in-one ARP spoof + sniff + DNS spoof | ✅ | Complete session workflow documented |
+| MITM Detection — ARP Cache | `arp -a` duplicate MAC inspection | ✅ | Identified attacker MAC impersonating gateway |
+| MITM Detection — Wireshark | ARP filter + gratuitous ARP analysis | ✅ | Flagged unsolicited ARP replies from attacker |
+| MITM Detection — XArp | GUI-based real-time ARP monitoring | ✅ | XArp alerted on MAC-IP mapping change |
 
 ---
 
@@ -410,8 +510,9 @@ sudo bettercap -iface eth0
 | Code Injection (HTTP) | T1185 | Web application security assessment |
 | Network Forensics | — | SOC analyst log analysis |
 | Tool Proficiency | — | Bettercap, Wireshark, Ettercap |
+| MITM Detection | — | ARP cache inspection, Wireshark ARP analysis, XArp monitoring |
 
 ---
 
 ## 🔗 Navigation
-⬅️ [Lab 03: Post-Connection Attacks](../lab-03-network-post-connection/README.md) &nbsp;|&nbsp; ➡️ Lab 05: Gaining Access — System Hacking *(Coming Soon)*
+⬅️ [Lab 03: Post-Connection Attacks](../lab-03-network-post-connection/README.md) &nbsp;|&nbsp; ➡️ [Lab 05: SIEM Home Lab — Splunk Enterprise](../lab-05-siem-splunk-home-lab/README.md)
