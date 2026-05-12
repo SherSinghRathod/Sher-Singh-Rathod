@@ -4,7 +4,7 @@
 
 **Offensive Security** · **Penetration Testing** · **Network Exploitation** · **Web Application Hacking**
 
-[![Labs](https://img.shields.io/badge/Labs_Completed-6-brightgreen)]()
+[![Labs](https://img.shields.io/badge/Labs_Completed-7-brightgreen)]()
 [![CCNA](https://img.shields.io/badge/CCNA-200--301_%E2%9C%85-blue?logo=cisco)](ccna-networking-labs/README.md)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Introduction_to_SIEM_%E2%9C%85-green?logo=tryhackme)](https://tryhackme.com/room/introtosiem)
 [![Status](https://img.shields.io/badge/Status-Active-blue)]()
@@ -27,6 +27,9 @@ Aspiring Cybersecurity Professional with hands-on experience in **offensive pene
 ---
 
 ## 🔥 Featured Labs
+
+### [🧪 Lab 07: Server-Side Attacks — Gaining Access](labs/lab-07-server-side-attacks/README.md)
+Set up Metasploitable 2 as a vulnerable target server, performed service enumeration with Nmap `-sV` to discover 9+ exploitable services, and exploited rlogin (port 513) to gain instant root shell access without any credentials. Documented the difference between server-side and client-side attacks, mapped techniques to MITRE ATT&CK (T1046, T1210, T1078), and explained why legacy services are critical security risks.
 
 ### [🔬 Lab 06: Wireshark — Deep Packet Inspection & Network Traffic Analysis](labs/lab-06-wireshark-traffic-analysis/README.md)
 Used Wireshark to capture and analyse live network traffic from a MITM position. Applied advanced display filters to extract HTTP credentials from POST requests, profile victim DNS queries, capture session cookies, and analyse legacy cleartext protocols (FTP/Telnet). Documented the full filter toolkit used by professional penetration testers for rapid traffic triage.
@@ -74,7 +77,7 @@ Built a production-grade isolated penetration testing lab with Kali Linux (attac
 | 4 | Man-in-the-Middle Attacks | ✅ Completed | [Lab 04](labs/lab-04-mitm-deep-dive/README.md) |
 | 5 | SIEM Home Lab — Splunk Enterprise | ✅ Completed | [Lab 05](labs/lab-05-siem-splunk-home-lab/README.md) |
 | 6 | Wireshark — Deep Packet Inspection & Traffic Analysis | ✅ Completed | [Lab 06](labs/lab-06-wireshark-traffic-analysis/README.md) |
-| 7 | Gaining Access (System Hacking) | 🔒 Coming Soon | — |
+| 7 | Gaining Access — Server-Side Attacks | ✅ Completed | [Lab 07](labs/lab-07-server-side-attacks/README.md) |
 | 8 | Post Exploitation | 🔒 Coming Soon | — |
 | 9 | Web Application Hacking | 🔒 Coming Soon | — |
 
@@ -157,7 +160,8 @@ Ethical-Hacking-Portfolio/
 │   ├── lab-03-network-post-connection/README.md ← ARP spoofing & MITM
 │   ├── lab-04-mitm-deep-dive/README.md          ← Advanced MITM techniques
 │   ├── lab-05-siem-splunk-home-lab/README.md   ← Splunk SIEM (Blue Team)
-│   └── lab-06-wireshark-traffic-analysis/README.md ← Wireshark deep packet analysis
+│   ├── lab-06-wireshark-traffic-analysis/README.md ← Wireshark deep packet analysis
+│   └── lab-07-server-side-attacks/README.md    ← Server-side exploitation (Metasploitable)
 ├── ccna-networking-labs/
 │   └── README.md                               ← CCNA 200-301 Packet Tracer labs
 └── (more labs coming as sections are completed)
