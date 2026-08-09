@@ -16,10 +16,10 @@
 
 ## 👤 About Me
 
-Cybersecurity-focused **Network Engineer (L1)** at a BFSI enterprise, with hands-on experience in **offensive penetration testing**, **network security**, and **SIEM/SOC operations**. Completed the **CCNA 200-301** networking course with hands-on Cisco Packet Tracer labs, built a full Splunk SIEM home lab, and developed practical offensive skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
+Network Engineer (L1) at a BFSI enterprise, with hands-on experience in **offensive penetration testing**, **network security**, and **SIEM/SOC operations**. Completed the **CCNA 200-301** networking course with hands-on Cisco Packet Tracer labs, built a full Splunk SIEM home lab, and developed practical offensive skills through structured lab exercises covering wireless attacks, network exploitation, man-in-the-middle techniques, and web application hacking.
 
 **Career Objectives:**
-- Grow from Network Engineer L1 into a specialized security engineering role **(Firewall / SOC / Penetration Testing)**
+- Grow from Network Engineer L1 into a specialized security engineering role (**firewall / SOC / penetration testing**)
 - Complete extensive hands-on lab scenarios with documented proof of work
 - Attain industry-standard certifications: **eJPT → CEH → OSCP → CySA+**
 - Build custom security tools that demonstrate real coding ability
